@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Profile - Dela Cruz Lab 3</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <h1 class="site-title">My Profile</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#contact-me">Message Me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+    <section class="left-column">
+      <div id="home" class="profile-card">
+        <img src="zhanjoe.jpg" class="profile-img" alt="Profile Image of Zhanjoe Dela Cruz">
+        <h2 class="name">Dela Cruz, Zhanjoe DL.</h2>
+        <span class="job-title">Student</span>
+        <div class="actions" style="margin-top:12px; display:flex; gap:8px; flex-wrap:wrap;">
+          <button id="themeBtn">Toggle Dark Mode</button>
+          <button id="editJobBtn">Edit Job Title</button>
+          <button id="toggleSkillsBtn">Hide Skills</button>
+        </div>
+      </div>
+
+      <section id="skillsSection" class="skills">
+        <h3>Skills</h3>
+        <ul class="skills-list">
+          <li>Mobile Games</li>
+          <li>Organize</li>
+          <li>Patience</li>
+        </ul>
+      </section>
+
+      <section class="contact">
+        <h3>Contact</h3>
+        <p><strong>Phone:</strong> <a href="tel:+639771730490">+63 9771730490</a></p>
+        <p><strong>Email:</strong> <a href="mailto:delacruzzhanjoe@gmail.com">delacruzzhanjoe@gmail.com</a></p>
+      </section>
+    </section>
+
+    <section class="right-column">
+      <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I'm Zhanjoe, 19 years old. I like to play Mobile Games and watch Action Movies.</p>
+      </section>
+
+      <section class="experience">
+        <h2>My Experiences</h2>
+        <p>I joined two seminars about Cybersecurity and received two certificates.</p>
+      </section>
+
+      <section id="contact-me" class="message-form">
+        <h2>Message Me</h2>
+        <form id="messageForm" action="submit" method="post">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" maxlength="200" placeholder="Write your message here..."></textarea>
+          <p class="char-counter">Characters left: <span id="counter" aria-live="polite">200</span></p>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      <section class="experience" id="quotes">
+        <h2>Motivation</h2>
+        <p id="quoteDisplay">Click the button to get a quote.</p>
+        <button id="quoteBtn">New Quote</button>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p><strong>WebProg - Web Programming 2025</strong></p>
+      <p id="dateDisplay"></p>
+    </div>
+  </footer>
+</body>
+</html>
